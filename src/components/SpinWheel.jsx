@@ -51,4 +51,5 @@ const Wheel = () => {
       </div>
     );
   };
+  
 export default Wheel;
