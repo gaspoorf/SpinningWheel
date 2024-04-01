@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lilita+One&display=swap');
+
+button{
+    background-color: #C622C0;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Lilita One", sans-serif;
+    font-size: 40px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.button-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #C622C0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.more {
+    position: absolute;
+    font-family: "Luckiest Guy", cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+
+.button-pink{
+    background-color: #e061dc;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Lilita One", sans-serif;
+    font-size: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.button-win{
+    height: 100px;
+}

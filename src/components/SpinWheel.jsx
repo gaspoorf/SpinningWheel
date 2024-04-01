@@ -1,7 +1,5 @@
-// App.jsx
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./css/wheel.css";
 import ConfigurePage from "./ConfigurePage";
 import RoulettePage from "./RoulettePage";
 

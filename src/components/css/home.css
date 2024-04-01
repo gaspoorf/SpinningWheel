@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+.mobile{
+    max-width: 340px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #C622C0;
+    font-size: 80px;
+    font-family: "Luckiest Guy", cursive;
+}
+
+
+
+.wheel {
+    display: flex;
+    justify-content: center;
+}
+  
+.second-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #C622C0;
+    font-size: 60px;
+    font-family: "Luckiest Guy", cursive;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #C622C0;
+    font-size: 30px;
+    font-family: "Luckiest Guy", cursive;
+}
+
+.input-player{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(198, 196, 196);
+    color: black;
+    font-size: 30px;
+    font-family: "Luckiest Guy", cursive;
+    margin-right: 10px;
+}
+
+
+.input-player:focus {
+    outline: none;
+    background-color: rgb(167, 166, 166) ;
+}
+
+
+body {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+  
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
+.input-button{
+    text-align: center;
+}
+
+.input-player,
+.button-circle {
+  display: inline-block; /* Pour les aligner horizontalement */
+  vertical-align: middle; /* Pour les aligner verticalement au centre */
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    width: 100%;
+}
+
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+}
+
+canvas{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.marg-top{
+    margin-top: 150px;
+}
+
+.marg-top2{
+    margin-top: 50px;
+}
+
+.marg-top3{
+    margin-top: 50px;
+}
+
+.marg-bottom{
+    margin-bottom: 200px;
+}
+
+
+.segment-text {
+    font-size: 50px; /* Modifiez la taille du texte ici */
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+
+    .marg-top3{
+        margin-top: 150px;
+    }
+
+    .marg-top-mobile{
+        padding-top: 50px;
+    }
+
+}
