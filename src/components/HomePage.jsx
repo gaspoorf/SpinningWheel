@@ -23,7 +23,6 @@ export default function HomePage({ onSelectPage }) {
         </div>
         <div className='flex-column marg-top'>
             <button onClick={() => onSelectPage('input')}>PLAY</button>
-            <button onClick={() => onSelectPage('input')}>CUSTOM</button>
         </div>
     </div>
   );

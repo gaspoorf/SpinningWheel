@@ -15,16 +15,12 @@ var urlsToCache = [
   '../src/components/ConfigurePage.jsx',
   '../src/components/HomePage.jsx',
   '../src/components/RoulettePage.jsx',
-  '../src/components/SettingsPage.jsx',
   '../src/components/SpinWheel.jsx',
   '../src/components/WheelConstructor.jsx',
   '../src/components/css/reset.css',
   '../src/components/css/home.css',
   '../src/components/css/button.css',
   '../src/components/css/wheel.css',
-  '../src/components/audio/backSound.mp3',
-  '../src/components/audio/click.mp3',
-  '../src/components/audio/wheel.mp3',
 ];
 
 // installation service worker
@@ -59,15 +55,15 @@ self.addEventListener('activate', function(event) {
 // interception des requêtes réseau
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    // Tente de récupérer la ressource depuis le cache
+    // récupére la ressource depuis le cache
     caches.match(event.request)
       .then(function(response) {
-        // Si la ressource est trouvée dans le cache, la renvoie
+        // si ressource est trouvée dans le cache, la renvoie
         if (response) {
           return response;
         }
-        // Sinon, effectue la requête réseau
-        return fetch(event.request);
+        
+        return fetch(event.request);// sinon effectue la requête réseau
       })
   );
 });

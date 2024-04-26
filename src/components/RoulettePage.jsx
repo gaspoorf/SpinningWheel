@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import WheelComponent from './WheelConstructor';
 
 export default function RoulettePage({ segments, onBack }) {
-  const [winner, setWinner] = useState(null); // définir l'état winner et la fonction setWinner
+  const [winner, setWinner] = useState(null);
 
   // alterner entre rose et violet
   const alternateColors = (index) => {

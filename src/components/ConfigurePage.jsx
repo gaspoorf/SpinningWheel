@@ -8,10 +8,9 @@ export default function InputPage({ onSubmit, segments: initialSegments }) {
   const [fields, setFields] = useState([]);
 
   useEffect(() => {
-    // Initialiser les champs avec les segments passés en tant que props
     setFields(initialSegments);
     if (initialSegments.length === 0) {
-      setFields(['', '']); // ajoute deux champs d'entrée de base si ya pas de segments initiaux
+      setFields(['', '']);
     }
   }, [initialSegments]);
 
@@ -26,7 +25,7 @@ export default function InputPage({ onSubmit, segments: initialSegments }) {
   };
 
   const handleRemoveField = (index) => {
-    if (fields.length <= 2) return; // empêche la suppression si le nombre de champs est inférieur ou égal à 2
+    if (fields.length <= 2) return;
     const newFields = [...fields];
     newFields.splice(index, 1);
     setFields(newFields);
@@ -38,7 +37,7 @@ export default function InputPage({ onSubmit, segments: initialSegments }) {
 
   const allFieldsFilled = fields.every(field => field.trim() !== '');
   const buttonStyle = {
-    backgroundColor: allFieldsFilled ? '#C622C0' : 'gray' // couleur gris si les champs sont pas remplis
+    backgroundColor: allFieldsFilled ? '#C622C0' : 'gray'
   };
 
   return (
